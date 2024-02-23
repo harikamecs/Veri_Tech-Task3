@@ -1,0 +1,46 @@
+/* TicTacToe.css */
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.square.winner {
+  background-color: #9aff9a; /* Light green for winning squares */
+}
+
+.game-info {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.restart-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50; /* Green button color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.restart-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
